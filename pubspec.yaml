@@ -21,7 +21,7 @@ topics:
     - places-autocomplete
 
 environment:
-    sdk: ">=3.1.0 <4.0.0"
+    sdk: ">=3.9.2 <4.0.0"
     flutter: ">=3.10.0"
 
 flutter:
@@ -43,7 +43,10 @@ dependencies:
     geolocator: ^14.0.2
     flutter_hooks: ^0.21.3
     freezed_annotation: ^3.1.0
-    google_maps_apis: ^4.0.0
+    google_maps_apis: # ^4.0.0
+        git:
+            url: https://github.com/kechankrisna/google_maps_apis.git
+            ref: v3.38.0
     dio: ^5.9.0
     http: ^1.5.0
 
